@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.promotions.entite.Promotion;
-import com.example.promotions.rest.IServicePromotionRest;
-import com.example.promotions.rest.ServicePromotionRest;
+import com.example.promotions.rest.IServiceRest;
+import com.example.promotions.rest.ServiceRest;
 
 import java.io.Serializable;
 import java.util.List;
@@ -31,7 +31,7 @@ public class EtudiantActivity extends AppCompatActivity implements View.OnClickL
     private EditText nom;
     private EditText prenom;
     private TextView resultatTexte;
-    private IServicePromotionRest serviceRest;
+    private IServiceRest serviceRest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class EtudiantActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_etudiants);
 
-        serviceRest = ServicePromotionRest.getInstance();
+        serviceRest = ServiceRest.getInstance();
 
         nom = (EditText)findViewById(R.id.nom);
         prenom = (EditText)findViewById(R.id.prenom);

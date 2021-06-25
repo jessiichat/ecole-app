@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
-public interface IServicePromotionRest {
+public interface IServiceRest {
 
     public static final String ENDPOINT = "http://10.0.3.2:8080/ecole/";
 
